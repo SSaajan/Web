@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400;1,500;1,600&display=swap');
+
+:root {
+    --primary-colour: #F76C6C;
+    --secondary-colour: #374785;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+@import "nav-bar";
+@import "main";
+@import "magazines";

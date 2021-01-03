@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.magazine-wrapper {
+    margin-left: 5%;
+    background: var(--primary-colour);
+    width: 300px;
+    height: 75vh;
+    border-radius: 15px;
+    padding-top: .8%;
+}
+
+.magazines {
+    position: relative;
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    height: 75vh;
+    overflow: hidden;
+
+    .versions {
+        display: flex;
+        width: 100%;
+
+        img {
+            width: 300px;
+            padding: 5%;
+        }
+    }
+
+    button {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+        font-size: 25%;
+        padding: 4%;
+        width: fit-content;
+        color: white;
+        background: var(--primary-colour);
+    }
+
+    p {
+        text-align: center;
+        font-size: 50%;
+        font-weight: 500;
+        color: var(--primary-colour);
+        position: absolute;
+        bottom: 17%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#prevBtn {
+    position: absolute;
+    bottom: 5%;
+    z-index: 10;
+    left: 6%;
+    cursor: pointer;
+    width: 15%;
+}
+
+#nextBtn {
+    position: absolute;
+    bottom: 5%;
+    z-index: 10;
+    right: 6%;
+    cursor: pointer;
+    width: 15%;
+}

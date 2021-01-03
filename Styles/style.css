@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400;1,500;1,600&display=swap");
+:root {
+  --primary-colour: #F76C6C;
+  --secondary-colour: #374785;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans;
+  font-size: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+.navigation-bar {
+  z-index: 15;
+  position: fixed;
+  background-color: var(--primary-colour);
+}
+
+.navigation-bar .nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation-bar .nav-list li a {
+  text-align: center;
+}
+
+.navigation-bar .nav-list li :hover .icons {
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+  color: var(--secondary-colour);
+}
+
+.navigation-bar .icons {
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation-bar {
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+  }
+  .nav-list {
+    height: 12vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-list li a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-list li svg {
+    width: .6rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navigation-bar {
+    width: 7vw;
+    height: 100vh;
+  }
+  .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-list li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 25vh;
+  }
+  .nav-list li svg {
+    width: .8rem;
+  }
+}
+
+main {
+  padding-bottom: 3%;
+  background-color: #A8D0E6;
+  font-family: 'Montserrat', sans;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Hero-text {
+  margin-top: .4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 0 0 5%;
+  width: 60%;
+  left: 0;
+}
+
+.Hero-text p {
+  padding: 2% 0;
+  width: 70%;
+  color: var(--secondary-colour);
+  font-weight: 500;
+  font-style: italic;
+  font-size: .4em;
+  line-height: 1.5em;
+  letter-spacing: .09em;
+}
+
+.srishti-img {
+  padding-bottom: 1%;
+  width: 45vw;
+}
+
+.srishti-year-img {
+  width: 20vw;
+}
+
+.line {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 2.5em;
+}
+
+button {
+  cursor: pointer;
+  letter-spacing: .3em;
+  margin-top: 3%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: var(--primary-colour);
+  font-style: italic;
+  font-weight: 600;
+  font-size: .4em;
+  border: none;
+  border-radius: 7px;
+  padding: 3% 3.5%;
+}
+
+.magazines button {
+  position: relative;
+  letter-spacing: .3em;
+  margin-top: 5%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: var(--primary-colour);
+  font-style: italic;
+  font-weight: 600;
+  font-size: .4em;
+  border: none;
+  border-radius: 5px;
+  padding: 5% 8%;
+}
+
+.box {
+  position: absolute;
+  right: 5%;
+  top: 15vh;
+  height: 60vh;
+  width: 30%;
+  background: white;
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2%;
+}
+
+.box img {
+  width: 50%;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+.box p {
+  color: var(--secondary-colour);
+  font-weight: 500;
+  font-style: italic;
+  font-size: .4em;
+  line-height: 1.5em;
+  letter-spacing: .09em;
+  text-align: center;
+}
+
+.box2 {
+  position: absolute;
+  right: 4%;
+  top: 14vh;
+  height: 63vh;
+  width: 30%;
+  background: var(--primary-colour);
+  border-radius: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+  main .srishti-year-img {
+    margin-top: -8%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    margin-left: 7vw;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    margin-bottom: 10vh;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .Hero-text {
+    width: 80%;
+    margin-left: 5%;
+  }
+  main .Hero-text .srishti-year-img {
+    margin-top: -8%;
+    width: 30vw;
+  }
+  main .Hero-text .srishti-img {
+    padding-bottom: 1%;
+    width: 55vw;
+  }
+  main .magazine-wrapper {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .Hero-text {
+    margin-top: 0;
+    width: 90%;
+  }
+  main .Hero-text .srishti-year-img {
+    margin-top: -20%;
+  }
+  main .Hero-text p {
+    font-size: .35em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  main .Hero-text {
+    margin-top: -2%;
+  }
+  main .Hero-text .srishti-year-img {
+    width: 50vw;
+    margin-top: -25%;
+  }
+  main .Hero-text .srishti-img {
+    padding-right: 5%;
+    width: 80vw;
+  }
+  main .Hero-text p {
+    width: 90%;
+    padding: .8em 0;
+    font-size: .35em;
+  }
+  main .magazine-wrapper {
+    height: 60vh;
+    margin: 10% 0;
+  }
+  main .magazine-wrapper .magazines {
+    height: 62vh;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.magazine-wrapper {
+  margin-left: 5%;
+  background: var(--primary-colour);
+  width: 300px;
+  height: 75vh;
+  border-radius: 15px;
+  padding-top: .8%;
+}
+
+.magazines {
+  position: relative;
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.magazines .versions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.magazines .versions img {
+  width: 300px;
+  padding: 5%;
+}
+
+.magazines button {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  font-size: 25%;
+  padding: 4%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  background: var(--primary-colour);
+}
+
+.magazines p {
+  text-align: center;
+  font-size: 50%;
+  font-weight: 500;
+  color: var(--primary-colour);
+  position: absolute;
+  bottom: 17%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#prevBtn {
+  position: absolute;
+  bottom: 5%;
+  z-index: 10;
+  left: 6%;
+  cursor: pointer;
+  width: 15%;
+}
+
+#nextBtn {
+  position: absolute;
+  bottom: 5%;
+  z-index: 10;
+  right: 6%;
+  cursor: pointer;
+  width: 15%;
+}
+/*# sourceMappingURL=style.css.map */

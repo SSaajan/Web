@@ -1,0 +1,205 @@
+main {
+    padding-bottom: 3%;
+    background-color: #A8D0E6;
+    font-family: 'Montserrat', sans;
+    display: flex;
+    align-items: center;
+}
+
+.Hero-text {
+    margin-top: .4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 0 5%;
+    width: 60%;
+    left: 0;
+    p {
+        padding: 2% 0;
+        width: 70%;
+        color: var(--secondary-colour);
+        font-weight: 500;
+        font-style: italic;
+        font-size: .4em;
+        line-height: 1.5em;
+        letter-spacing: .09em;
+    }
+}
+
+.srishti-img {
+    padding-bottom: 1%;
+    width: 45vw;
+}
+
+.srishti-year-img {
+    width: 20vw;
+}
+
+.line {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 2.5em;
+}
+
+button {
+    cursor: pointer;
+    letter-spacing: .3em;
+    margin-top: 3%;
+    width: fit-content;
+    background-color: white;
+    color: var(--primary-colour);
+    font-style: italic;
+    font-weight: 600;
+    font-size: .4em;
+    border: none;
+    border-radius: 7px;
+    padding: 3% 3.5%;
+}
+
+.magazines {
+    button {
+        position: relative;
+
+        letter-spacing: .3em;
+        margin-top: 5%;
+        width: fit-content;
+        background-color: white;
+        color: var(--primary-colour);
+        font-style: italic;
+        font-weight: 600;
+        font-size: .4em;
+        border: none;
+        border-radius: 5px;
+        padding: 5% 8%;
+    }
+}
+
+.box {
+    position: absolute;
+    right: 5%;
+    top: 15vh;
+    height: 60vh;
+    width: 30%;
+    background: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    img {
+        width: 50%;
+        height: auto;
+        padding-bottom: 5%;
+    }
+    p {
+        color: var(--secondary-colour);
+        font-weight: 500;
+        font-style: italic;
+        font-size: .4em;
+        line-height: 1.5em;
+        letter-spacing: .09em;
+        text-align: center;
+    }
+}
+
+.box2 {
+    position: absolute;
+    right: 4%;
+    top: 14vh;
+    height: 63vh;
+    width: 30%;
+    background: var(--primary-colour);
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        .srishti-year-img {
+            margin-top: -8%;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        margin-left: 7vw;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        margin-bottom: 10vh;
+        width: 100vw;
+        height: 100%;
+        z-index: 1;
+        flex-direction: column;
+
+        .Hero-text {
+            width: 80%;
+            margin-left: 5%;
+
+            .srishti-year-img {
+                margin-top: -8%;
+                width: 30vw;
+            }
+
+            .srishti-img {
+                padding-bottom: 1%;
+                width: 55vw;
+            }
+        }
+
+        .magazine-wrapper {
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        .Hero-text {
+            margin-top: 0;
+            width: 90%;
+            .srishti-year-img {
+                margin-top: -20%;
+            }
+
+            p {
+                font-size: .35em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        .Hero-text {
+            margin-top: -2%;
+            .srishti-year-img {
+                width: 50vw;
+                margin-top: -25%;
+            }
+            .srishti-img {
+                padding-right: 5%;
+                width: 80vw;
+            }
+            p {
+                width: 90%;
+                padding: .8em 0;
+                font-size: .35em;
+            }
+        }
+
+        .magazine-wrapper {
+            height: 60vh;
+            margin: 10% 0;
+
+            .magazines {
+                height: 62vh;
+            }
+        }
+    }
+}
